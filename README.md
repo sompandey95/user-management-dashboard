@@ -1,16 +1,137 @@
-# React + Vite
+# User Management Dashboard (Full Stack)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack **User Management Dashboard** built using **React**, **Node.js**, and **Express**.  
+This project demonstrates core frontend and backend concepts such as CRUD operations, REST API integration, state management, and clean project architecture.
 
-Currently, two official plugins are available:
+This application is designed as an **admin-style dashboard module**, similar to what is used internally in real-world products and enterprise systems.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- View list of users in a tabular format
+- Add new users with role selection
+- Edit existing user details
+- Delete users
+- Client-side routing using React Router
+- RESTful backend APIs built with Express
+- Clean separation between frontend and backend
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+### Frontend
+- React (Vite)
+- JavaScript (ES6+)
+- React Router
+- CSS
+
+### Backend
+- Node.js
+- Express.js
+- REST APIs
+- CORS
+
+---
+
+## 📂 Project Structure
+
+user-management-dashboard/
+│
+├── backend/
+│   ├── index.js
+│   ├── package.json
+│
+├── src/
+│   ├── components/
+│   │   ├── AddUser.jsx
+│   │   ├── UserList.jsx
+│   │   └── Navbar.jsx
+│   │
+│   ├── pages/
+│   │   ├── UserPage.jsx
+│   │   └── AddUserPage.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── App.css
+│
+├── public/
+├── package.json
+├── vite.config.js
+└── README.md
+
+---
+
+## ⚙️ How to Run the Project Locally
+
+### 1️⃣ Clone the Repository
+
+git clone https://github.com/sompandey95/user-management-dashboard.git  
+cd user-management-dashboard
+
+---
+
+### 2️⃣ Start the Backend Server
+
+cd backend  
+npm install  
+node index.js
+
+Backend runs on:  
+http://localhost:5000
+
+---
+
+### 3️⃣ Start the Frontend Application
+
+npm install  
+npm run dev
+
+Frontend runs on:  
+http://localhost:5173
+
+---
+
+## 🔄 API Endpoints
+
+GET    /users        – Fetch all users  
+POST   /users        – Add a new user  
+PUT    /users/:id    – Update user details  
+DELETE /users/:id    – Delete a user  
+
+---
+
+## 🧠 Key Learnings
+
+- Built a full-stack CRUD application using REST APIs
+- Managed shared state and component communication in React
+- Implemented client-side routing using React Router
+- Integrated frontend with backend using Fetch API
+- Followed clean folder structure and modular design
+- Understood real-world frontend ↔ backend interaction
+
+---
+
+## 📌 Future Enhancements
+
+- Search and filter functionality
+- Role-based access control
+- Authentication and authorization
+- Database integration (MongoDB / PostgreSQL)
+- Improved UI and responsiveness
+
+---
+
+## 👤 Author
+
+Som Pandey  
+B.Tech Computer Science (2026)
+
+---
+
+## 📄 License
+
+This project is open-source and available for learning and educational purposes.
+EOF
